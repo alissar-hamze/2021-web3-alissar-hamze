@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+
+            fieldset {
+                background-color: #ffffff;
+                border:2px solid Plum ;
+
+                -moz-border-radius:8px;
+                -webkit-border-radius:8px;	
+                border-radius:8px;
+                position: fixed;
+                bottom: 150px ;
+                right: 100px;
+
+
+            }
+
+            body{
+                font-family: Arial, Helvetica, sans-serif;}
+
+
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            .btn {
+                background-color:#1e90ff;
+                color: white;
+                padding: 14px 20px;
+                text-align: center;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100px;
+                opacity: 1;
+                transition: 0.3s;
+            }
+            .btn:hover {opacity: 0.5}
+
+
+            .cancelbtn {
+                background-color: #a1045a;
+                color: white;
+                padding: 14px 20px;
+                text-align: center;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100px;
+                opacity: 1;
+                transition: 0.3s;
+                position: fixed;
+                bottom: 80px ;
+                right: 440px;
+            }
+            .cancelbtn:hover {opacity: 0.5}
+
+            .avatar {
+                width: 40%;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body style="background-image:url('loginback.jpeg');background-repeat: no-repeat;
+          background-size:1370px 700px;">
+
+
+        <br><br><br><br><br><br><br>
+
+        <fieldset style="width:30%; right:100px; ">
+            <legend style="">
+                <h4 style="color:#1e90ff">Admin Login</h4>
+            </legend>
+            <center>
+                <img src="adminiconlogin.jpg" style="width: 80px ; height: 90px"/>
+
+            </center>
+            <br>
+            <center>
+                <p>
+                <h5 style="color:#a1045a" >Please enter your password to log in.</h5>
+                <form action="">
+                    <input type="password" placeholder="Your Password" name="pass" style="width:300px" required><p>
+
+                        <button type="submit" class ="btn">Login</button>
+
+                </form>
+            </center>
+        </fieldset>
+
+        <button type="button" name="back" class="cancelbtn" onclick="document.location.href('index.html')">Cancel</button>
+
+    </body>
+</html>
